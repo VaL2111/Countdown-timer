@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(153, 193, 211, 0.5);
+  font-family: "Open Sans", sans-serif; }
+
+.timer {
+  padding: 32px;
+  border-radius: 16px;
+  background: rgba(104, 185, 255, 0.68); }
+
+.timer-title {
+  display: flex;
+  justify-content: center;
+  font-size: 45px; }
+
+.timer-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px; }
+
+.timer-item {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px; }
+
+.timer-item:not(:last-child) {
+  margin-right: 16px; }
+
+.timer-item-circle {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.timer-item-number {
+  font-size: 48px;
+  line-height: 1em;
+  position: relative; }
+
+.timer-item-name {
+  margin-top: 16px;
+  font-weight: 300; }
+
+.circle {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  transform: rotate(-90deg); }
+
+.segment {
+  fill: rgba(0, 0, 0, 0.1);
+  stroke: url(#gradient);
+  stroke-width: 0.7px;
+  stroke-dasharray: 60 60;
+  stroke-linecap: round;
+  transform: scale(4.7);
+  transform-origin: center;
+  transition: stroke-dasharray 1s linear; }
+
+.gradient-1 {
+  stop-color: #ff5050; }
+
+.gradient-2 {
+  stop-color: #ffed13; }
+
+.buttons-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+  overflow: hidden; }
+
+.button {
+  height: 55px;
+  width: 55px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
